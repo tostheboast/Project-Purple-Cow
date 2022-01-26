@@ -8,13 +8,13 @@ This repository contains a terraform script which when run will deploy an infras
   2.  **API Gateway** contains an api that serves to invoke the above lambda function upon hitting the aws generated url and endpoint
 
 
-## How to Run ssl-checker Terraform
+## How to Run ssl-checker on Terraform
 
-you can run the terraform script either by cloning the repository and running it locally or by utilizing github actions to automate the terraform process
+you can run the terraform script by cloning the repository and running it locally
 
 ### Run Locally
 
-Make sure you have the following tools installed locally before running the terraform script
+**Make sure you have the following tools installed locally before running the terraform script**
   - Terraform CLI (which can be found here: https://www.terraform.io/downloads)
   - AWS CLI (this is somewhat *optional*, but is a good way to test the lambda function by invoking it through the cli)
   - *Note*: make sure you have an aws access key and secret access key with links to a user with permissions to create iam-roles, lambda functions, cloudwatch logs, and api-gateway APIs
